@@ -1,0 +1,197 @@
+@import "./variables";
+@import "./mixins";
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body,
+input {
+  font-family: "Rubik", sans-serif;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+main img {
+  width: 100%;
+}
+
+// Header styles
+header {
+  background-color: $color-1;
+  .container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    ul {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Main styles
+main {
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
+  h2 {
+    width: 70%;
+    margin: 3rem auto;
+    color: $color-5;
+    @include mainHeading();
+    span {
+      color: $color-1;
+    }
+  }
+  p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  a {
+    margin: 2rem auto;
+    @include btnFormat();
+    @include primaryBtn();
+  }
+  form {
+    @include formFormat();
+    label,
+    input {
+      @include formContent();
+    }
+    .submit {
+      @include btnFormat();
+      @include bodyFont();
+    }
+  }
+  .api {
+    background-color: $color-2;
+    padding: 3rem 0;
+    h4 {
+      margin: 0 auto;
+      width: 90%;
+      color: $color-5;
+      @include subHeading();
+    }
+    .submit {
+      @include secondaryBtn();
+    }
+  }
+  .newsletter {
+    background-color: $color-5;
+    padding: 3rem 0;
+    h3 {
+      color: $color-3;
+      @include mainHeading();
+      span {
+        color: $color-2;
+      }
+    }
+    h5 {
+      @include mainHeading();
+      font-size: 1.5rem;
+      color: $color-3;
+      margin-top: 1rem;
+    }
+    .submit {
+      @include primaryBtn();
+    }
+  }
+}
+
+// Footer styles
+footer {
+  width: 90%;
+  margin: 3rem auto;
+  .logo img {
+    display: flex;
+    margin: 0 auto;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 20rem;
+    margin: 1rem auto;
+    a {
+      text-decoration: none;
+      color: $color-4;
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+
+// Media queries
+@media (min-width: 768px) {
+  main {
+    h2,
+    .api h4 {
+      width: 50%;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      label,
+      input {
+        width: 50%;
+        margin-bottom: 1rem;
+      }
+    }
+    .api .submit {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    h2 {
+      width: 30%;
+      text-align: left;
+      display: flex;
+      flex-flow: row wrap;
+      align-self: center;
+    }
+    img {
+      width: 60%;
+    }
+    .block-1 {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .block-2 {
+      display: flex;
+      flex-flow: row-reverse wrap;
+      .inner {
+        width: 30%;
+        margin: 0 auto;
+        margin-left: 0;
+        align-self: center;
+        h2 {
+          width: 60%;
+          margin-left: 0;
+        }
+        p {
+          margin-left: 0;
+        }
+      }
+      img {
+        margin: 0 auto;
+        margin-left: 0;
+      }
+    }
+  }
+}
