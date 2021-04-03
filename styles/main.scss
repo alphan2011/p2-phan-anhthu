@@ -37,7 +37,8 @@ header {
   }
 }
 
-// Main styles
+// ********Main styles*********
+// Homepage
 main {
   h2,
   h3,
@@ -98,14 +99,40 @@ main {
       }
     }
     h5 {
-      @include mainHeading();
-      font-size: 1.5rem;
+      @include subHeading();
       color: $color-3;
       margin-top: 1rem;
     }
     .submit {
       @include primaryBtn();
     }
+  }
+}
+
+// Works
+.hero {
+  background-image: url("../images/art-collage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 28% 0;
+}
+
+.carousel-section {
+  background-color: $color-5;
+  margin: 3rem 0;
+  padding: 3rem;
+  h2 {
+    color: $color-3;
+  }
+  h3 {
+    @include subHeading();
+    color: $color-2;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  p {
+    color: $color-6;
   }
 }
 

@@ -143,7 +143,6 @@ main .newsletter h3 span {
 main .newsletter h5 {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
-  font-size: 2rem;
   font-size: 1.5rem;
   color: #fcdcdc;
   margin-top: 1rem;
@@ -154,6 +153,37 @@ main .newsletter .submit {
   color: #1e2328;
   padding: 0.5rem 1rem;
   text-decoration: none;
+}
+
+.hero {
+  background-image: url("../images/art-collage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 28% 0;
+}
+
+.carousel-section {
+  background-color: #1e2328;
+  margin: 3rem 0;
+  padding: 3rem;
+}
+
+.carousel-section h2 {
+  color: #fcdcdc;
+}
+
+.carousel-section h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fce16e;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.carousel-section p {
+  color: #f2f2f2;
 }
 
 footer {
