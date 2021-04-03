@@ -186,6 +186,45 @@ main .newsletter .submit {
   color: #f2f2f2;
 }
 
+.top-block {
+  background-color: #1e2328;
+}
+
+.top-block h2 {
+  color: #fcdcdc;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.bottom-block {
+  background-color: #fcdcdc;
+}
+
+.bottom-block h2 {
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.bottom-block form {
+  margin-top: 0;
+  display: block;
+}
+
+.bottom-block form input {
+  margin: 0 auto 0.5rem auto;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-block form .submit {
+  background-color: #1e2328;
+  color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
 footer {
   width: 90%;
   margin: 3rem auto;
@@ -265,7 +304,8 @@ footer p {
   main img {
     width: 60%;
   }
-  main .block-1 {
+  main .block-1,
+  main .top-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -274,7 +314,8 @@ footer p {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
-  main .block-2 {
+  main .block-2,
+  main .bottom-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -283,7 +324,8 @@ footer p {
         -ms-flex-flow: row-reverse wrap;
             flex-flow: row-reverse wrap;
   }
-  main .block-2 .inner {
+  main .block-2 .inner,
+  main .bottom-block .inner {
     width: 30%;
     margin: 0 auto;
     margin-left: 0;
@@ -291,16 +333,25 @@ footer p {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  main .block-2 .inner h2 {
+  main .block-2 .inner h2,
+  main .bottom-block .inner h2 {
     width: 60%;
     margin-left: 0;
   }
-  main .block-2 .inner p {
+  main .block-2 .inner p,
+  main .bottom-block .inner p {
     margin-left: 0;
   }
-  main .block-2 img {
+  main .block-2 img,
+  main .bottom-block img {
     margin: 0 auto;
     margin-left: 0;
+  }
+  .bottom-block form input {
+    width: 100%;
+  }
+  .bottom-block form .submit {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */

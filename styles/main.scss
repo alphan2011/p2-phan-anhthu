@@ -136,6 +136,36 @@ main {
   }
 }
 
+// Contact
+.top-block {
+  background-color: $color-5;
+  h2 {
+    color: $color-3;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+}
+
+.bottom-block {
+  background-color: $color-3;
+  h2 {
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  form {
+    margin-top: 0;
+    display: block;
+    input {
+      margin: 0 auto 0.5rem auto;
+      max-width: 300px;
+      display: flex;
+    }
+    .submit {
+      @include secondaryBtn();
+    }
+  }
+}
+
 // Footer styles
 footer {
   width: 90%;
@@ -195,11 +225,13 @@ footer {
     img {
       width: 60%;
     }
-    .block-1 {
+    .block-1,
+    .top-block {
       display: flex;
       flex-flow: row wrap;
     }
-    .block-2 {
+    .block-2,
+    .bottom-block {
       display: flex;
       flex-flow: row-reverse wrap;
       .inner {
@@ -219,6 +251,14 @@ footer {
         margin: 0 auto;
         margin-left: 0;
       }
+    }
+  }
+  .bottom-block form {
+    input {
+      width: 100%;
+    }
+    .submit {
+      width: 40%;
     }
   }
 }
