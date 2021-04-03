@@ -285,6 +285,28 @@ footer p {
   main .api .submit {
     margin-top: 2rem;
   }
+  main .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  main .item img {
+    width: 60%;
+  }
+  main .item .details {
+    width: 30%;
+    margin-left: auto;
+  }
+  main .item .details h3 {
+    text-align: left;
+  }
+  main .item .details p {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -210,6 +210,23 @@ footer {
     .api .submit {
       margin-top: 2rem;
     }
+    .item {
+      display: flex;
+      flex-flow: row wrap;
+      img {
+        width: 60%;
+      }
+      .details {
+        width: 30%;
+        margin-left: auto;
+        h3 {
+          text-align: left;
+        }
+        p {
+          margin-left: 0;
+        }
+      }
+    }
   }
 }
 
