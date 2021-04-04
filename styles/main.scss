@@ -84,8 +84,13 @@ main {
       color: $color-5;
       @include subHeading();
     }
-    .submit {
-      @include secondaryBtn();
+    #air {
+      margin-top: 2rem;
+      h5 {
+        color: $color-4;
+        font-size: 3rem;
+        font-weight: 300;
+      }
     }
   }
   .newsletter {

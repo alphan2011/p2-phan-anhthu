@@ -117,11 +117,14 @@ main .api h4 {
   font-size: 1.5rem;
 }
 
-main .api .submit {
-  background-color: #1e2328;
-  color: #f2f2f2;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+main .api #air {
+  margin-top: 2rem;
+}
+
+main .api #air h5 {
+  color: #3b3f46;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 main .newsletter {
