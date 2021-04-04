@@ -83,6 +83,32 @@ header {
 
 // ********Main styles*********
 // Homepage
+.promo {
+  .pop-up {
+    width: 90%;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    top: 25%;
+    left: 5%;
+  }
+  .show {
+    display: block;
+  }
+  #exit {
+    position: absolute;
+    outline: none;
+    left: 90%;
+    top: 30%;
+    appearance: none;
+    background: none;
+    color: $color-1;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
 main {
   h2,
   h3,

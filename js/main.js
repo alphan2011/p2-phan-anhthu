@@ -45,3 +45,20 @@ menuLinks.forEach(
     menuLinks.addEventListener("click", toggleMenu)
   }
 )
+
+// Pop-up ad
+window.addEventListener("load",
+  function() {
+    document.querySelector(".pop-up").classList.add("show");
+    document.querySelector("main").style.opacity = "0.1";
+  }, false
+)
+
+var close = document.getElementById("exit");
+close.addEventListener("click",
+  function() {
+    document.querySelector(".pop-up").classList.remove("show");
+    document.querySelector("main").style.opacity = "1";
+    close.style.display = "none";
+  }, false
+)

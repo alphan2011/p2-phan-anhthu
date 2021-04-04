@@ -93,6 +93,35 @@ header .container ul a {
   text-decoration: none;
 }
 
+.promo .pop-up {
+  width: 90%;
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 25%;
+  left: 5%;
+}
+
+.promo .show {
+  display: block;
+}
+
+.promo #exit {
+  position: absolute;
+  outline: none;
+  left: 90%;
+  top: 30%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  color: #ffd053;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+}
+
 main h2,
 main h3,
 main h4,
