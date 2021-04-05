@@ -18,16 +18,6 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open('GET', 'http://api.airvisual.com/v2/nearest_city?key=536bcd9b-c208-4f46-9b2a-75bc3ed56ac1', true);
 xmlhttp.send();
 
-// Read More button
-var button = document.querySelector(".read");
-var para = document.querySelector(".para");
-
-button.addEventListener("click",
-  function() {
-    para.style.display = "block";
-  }, false
-);
-
 // Hamburger menu
 var menu = document.querySelector(".menu");
 var hamburger = document.querySelector(".hamburger");
