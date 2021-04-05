@@ -251,27 +251,29 @@ main .newsletter .submit {
   padding: 28% 0;
 }
 
-.carousel-section {
+.section {
   background-color: #1e2328;
   margin: 3rem 0;
   padding: 3rem;
 }
 
-.carousel-section h2 {
+.section h2 {
   color: #fcdcdc;
 }
 
-.carousel-section h3 {
-  font-family: "Roboto Slab", serif;
-  font-weight: 900;
-  font-size: 1.5rem;
-  color: #fce16e;
+.section .details button {
+  background-color: #fce16e;
+  color: #1e2328;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
   font-size: 1rem;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
-.carousel-section p {
+.section .details p {
   color: #f2f2f2;
+  display: none;
 }
 
 .top-block {
@@ -381,6 +383,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    margin-bottom: 2rem;
   }
   main .item img {
     width: 60%;

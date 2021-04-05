@@ -109,6 +109,7 @@ header {
     z-index: 2;
   }
 }
+
 main {
   h2,
   h3,
@@ -193,21 +194,24 @@ main {
   padding: 28% 0;
 }
 
-.carousel-section {
+.section {
   background-color: $color-5;
   margin: 3rem 0;
   padding: 3rem;
   h2 {
     color: $color-3;
   }
-  h3 {
-    @include subHeading();
-    color: $color-2;
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
-  p {
-    color: $color-6;
+  .details {
+    button {
+      @include primaryBtn();
+      font-size: 1rem;
+      margin: 1rem 0;
+      cursor: pointer;
+    }
+    p {
+      color: $color-6;
+      display: none;
+    }
   }
 }
 
@@ -288,6 +292,7 @@ footer {
     .item {
       display: flex;
       flex-flow: row wrap;
+      margin-bottom: 2rem;
       img {
         width: 60%;
       }
