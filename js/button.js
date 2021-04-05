@@ -1,9 +1,11 @@
 // Read More button
-var button = document.querySelector(".read");
-var para = document.querySelector(".para");
+var details = document.getElementsByClassName("details");
 
-button.addEventListener("click",
-  function() {
-    para.style.display = "block";
-  }, false
-);
+function togglePara() {
+  this.children[1].classList.toggle("display");
+}
+
+for(i=0; i < details.length; i++) {
+  details[i].addEventListener("mouseenter", togglePara);
+  details[i].addEventListener("mouseleave", togglePara);
+}

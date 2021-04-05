@@ -17,6 +17,10 @@ main img {
   width: 100%;
 }
 
+.display {
+  display: block !important;
+}
+
 header {
   background-color: #ffd053;
 }
